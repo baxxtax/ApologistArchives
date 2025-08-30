@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Literary Magazine</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Merriweather&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to The Crimson Quill</h2>
+      <p>A magazine for prose, poetry, essays, and art steeped in red & gold.</p>
+    </section>
+
+    <section class="latest">
+      <h3>Latest Highlights</h3>
+      <p>(Here we can display featured posts later)</p>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<footer>
+  <p>© 2025 The Crimson Quill — A Literary Magazine</p>
+</footer>

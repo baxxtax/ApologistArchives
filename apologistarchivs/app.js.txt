@@ -1,0 +1,36 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+const Post = require('./models/Post');
+
+dotenv.config();
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => console.log('✅ MongoDB connected'))
+  .catch(err => console.error(err));
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
+
+// Pages
+app.get('/', (req, res) => res.render('index'));
+app.get('/prose', (req, res) => res.render('prose'));
+app.get('/poetry', (req, res) => res.render('poetry'));
+app.get('/art', (req, res) => res.render('art'));
+app.get('/essays', (req, res) => res.render('essays'));
+app.get('/submissions', (req, res) => res.render('submissions'));
+app.get('/notes', (req, res) => res.render('notes'));
+
+// Example submission handler
+app.post('/submit', (req, res) => {
+  console.log(req.body);
+  res.send("Thank you for your submission!");
+});
+
+app.listen(PORT, () => console.log(`🚀 http://localhost:${PORT}`));

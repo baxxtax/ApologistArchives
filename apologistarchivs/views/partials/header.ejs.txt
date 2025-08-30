@@ -1,0 +1,12 @@
+<header>
+  <h1 class="logo">The Crimson Quill</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/prose">Prose</a>
+    <a href="/poetry">Poetry Dungeon</a>
+    <a href="/art">Art Archive</a>
+    <a href="/essays">Essays</a>
+    <a href="/submissions">Submissions</a>
+    <a href="/notes">Editor’s Notes</a>
+  </nav>
+</header>

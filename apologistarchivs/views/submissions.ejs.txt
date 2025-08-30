@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Your Work</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <h2>Submit Your Work</h2>
+    <form action="/submit" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <select name="category">
+        <option value="prose">Prose</option>
+        <option value="poetry">Poetry</option>
+        <option value="art">Art</option>
+        <option value="essay">Essay</option>
+      </select>
+      <textarea name="content" placeholder="Paste your submission here" rows="8"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

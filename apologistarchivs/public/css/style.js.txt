@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background-color: #1c1c1c;
+  color: #fdfdfd;
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  background: #8b0000;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+header .logo {
+  font-size: 3em;
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #d4af37;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(to bottom, #8b0000, #1c1c1c);
+  font-family: 'Playfair Display', serif;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #d4af37;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 20px auto;
+}
+
+form input, form textarea, form select {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: #fff;
+}
+
+form button {
+  background: #8b0000;
+  color: #d4af37;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #a52a2a;
+}
+
+footer {
+  background: #8b0000;
+  color: #d4af37;
+  text-align: center;
+  padding: 10px;
+}
